@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e7ff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4a90e2;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .progress-bar {
+            height: 5px;
+            background-color: #d3d3d3;
+            border-radius: 5px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .progress-bar::after {
+            content: '';
+            height: 100%;
+            width: 33%;
+            background-color: #4caf50;
+            display: block;
+            border-radius: 5px;
+        }
+        .section {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #4a90e2;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Application Form</h1>
+        </div>
+        <div class="progress-bar"></div>
+        <div class="section">
+            <h2>Personal Details</h2>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" placeholder="YYYY-MM-DD">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Case Information</h2>
+            <div class="form-group">
+                <label for="case-number">Case Number</label>
+                <input type="text" id="case-number" placeholder="Enter your case number">
+            </div>
+            <div class="form-group">
+                <label for="case-details">Case Details</label>
+                <textarea id="case-details" rows="4" placeholder="Enter details about your case"></textarea>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Upload Documents</h2>
+            <div class="form-group">
+                <label for="id-proof">Upload ID Proof</label>
+                <input type="file" id="id-proof">
+            </div>
+            <div class="form-group">
+                <label for="case-documents">Upload Case Related Documents</label>
+                <input type="file" id="case-documents">
+            </div>
+        </div>
+        <button class="submit-btn">Submit Application</button>
+        <div class="footer">
+            <p>&copy; 2023 BailEase</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

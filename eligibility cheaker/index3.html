@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>BailEase - Bail Application Status</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #6aa9ff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 30px;
+        }
+        .header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .status {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .status .status-header {
+            display: flex;
+            align-items: center;
+        }
+        .status .status-header i {
+            font-size: 24px;
+            color: #4caf50;
+            margin-right: 10px;
+        }
+        .status .status-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .status p {
+            margin: 10px 0 0 34px;
+            color: #666;
+        }
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .progress-bar div {
+            height: 20px;
+            width: 70%;
+            background-color: #4caf50;
+        }
+        .updates {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .updates h3 {
+            margin-top: 0;
+        }
+        .update-item {
+            margin-bottom: 10px;
+        }
+        .update-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #666;
+        }
+        .footer a {
+            color: #6aa9ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://placehold.co/100x30" alt="BailEase Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Application Form</a>
+            <a href="#">Status Tracker</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Bail Application Status</h1>
+        <div class="status">
+            <div class="status-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Current Status: Approved</h2>
+            </div>
+            <p>Your bail application has been approved.</p>
+            <div class="progress-bar">
+                <div></div>
+            </div>
+            <p>Estimated time until release: 2 hours</p>
+        </div>
+        <div class="updates">
+            <h3>Recent Updates</h3>
+            <div class="update-item">
+                <strong>Update 1</strong>
+                <p>Your application has been reviewed by the judge. (2 hours ago)</p>
+            </div>
+            <div class="update-item">
+                <strong>Update 2</strong>
+                <p>Your application is under review. (1 day ago)</p>
+            </div>
+            <div class="update-item">
+                <strong>Update 3</strong>
+                <p>We have received your application. (3 days ago)</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Enable Notifications</button>
+            <button>Contact Support</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: 1-800-BAILEASE</p>
+        <p>Email: <a href="mailto:support@bailease.com">support@bailease.com</a></p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Help</a>
+        </p>
+    </div>
+</body>
+</html>
